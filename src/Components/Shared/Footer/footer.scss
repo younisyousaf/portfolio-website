@@ -1,0 +1,154 @@
+//footer
+.footer__top {
+  .fl {
+    font-size: 10.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    margin-bottom: 60px;
+    border: 1px solid var(--cusborder);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .get__content {
+    p {
+      margin-bottom: 60px;
+      font-size: 24px;
+      color: var(--white);
+      max-width: 512px;
+    }
+    a {
+      color: var(--white);
+      font-size: 36px;
+      text-decoration: underline;
+    }
+  }
+  .get__rightcontetn {
+    .social__footer {
+      padding: 26px 28px;
+      border-radius: 10px;
+      border: 1px solid var(--cusborder);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--white);
+      font-size: 24px;
+      transition: all 0.4s;
+      i {
+        color: var(--white);
+        font-size: 22px;
+        transition: all 0.4s;
+      }
+      &:hover {
+        background: var(--base);
+        border-color: var(--base);
+        color: var(--title);
+        i {
+          color: var(--title);
+        }
+      }
+    }
+  }
+  @include breakpoint(max-xxl) {
+    .fl {
+      margin-bottom: 40px;
+    }
+    .get__content {
+      p {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  @include breakpoint(max-lg) {
+    .get__content {
+      p {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+      a {
+        font-size: 28px;
+      }
+    }
+    .get__rightcontetn {
+      .social__footer {
+        padding: 14px 16px;
+        border-radius: 10px;
+        font-size: 20px;
+        i {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  @include breakpoint(max-xs) {
+    .get__content {
+      p {
+        margin-bottom: 10px;
+        font-size: 17px;
+      }
+      a {
+        font-size: 18px;
+      }
+    }
+    .fl {
+      margin-bottom: 20px;
+    }
+  }
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 34px 0;
+  p {
+    font-size: 18px;
+  }
+  .terms {
+    display: flex;
+    gap: 38px;
+    li {
+      a {
+        font-size: 18px;
+        color: var(--white);
+        transition: all 0.4s;
+      }
+      &:hover {
+        a {
+          color: var(--base);
+        }
+      }
+    }
+  }
+  .toparrow {
+    width: 40px;
+    height: 50px;
+    background: var(--base);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-size: 28px;
+    }
+  }
+  @include breakpoint(max-lg) {
+    flex-wrap: wrap;
+    display: grid;
+    gap: 16px;
+    justify-content: center;
+    text-align: center;
+    .terms {
+      justify-content: center;
+      gap: 24px;
+    }
+    .toparrow {
+      margin: 0 auto;
+    }
+  }
+}
+//footer

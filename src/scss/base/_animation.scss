@@ -1,0 +1,47 @@
+//banner circle
+@keyframes cir90 {
+  50% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes cir360 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes cir5 {
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes updown {
+  50% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes leftx {
+  50% {
+    transform: translateX(-25px);
+  }
+}
+@keyframes leftx2 {
+  50% {
+    transform: translateX(25px);
+  }
+}
+@keyframes zomin {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.right_up {
+  transform: translate3d(-100px, 100px, 0);
+  opacity: 0;
+}
+.right_up_animat {
+  transition: all .3s linear;
+  opacity: 1;
+  transform: translateZ(0);
+}

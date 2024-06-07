@@ -1,0 +1,99 @@
+.subside__barmenu {
+  width: 319px;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  background: #000;
+  right: -320px;
+  top: 0;
+  transition: all 0.4s;
+  overflow-y: scroll;
+  .remove__click {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background: var(--base);
+    padding: 5px;
+    border-radius: 6px;
+    margin-left: auto;
+    &:hover {
+      cursor: pointer;
+    }
+    i {
+      font-size: 22px;
+      color: var(--mtitle);
+    }
+  }
+  .sub__contact__wrapper {
+    padding: 40px 20px;
+    .side-logo {
+      margin-bottom: 20px;
+    
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+    .sub__contact-left {
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .social {
+      li {
+        a {
+          width: 45px;
+          height: 45px;
+          background: var(--base);
+          border: 1px solid var(--base);
+          i {
+            color: var(--title);
+          }
+        }
+      }
+    }
+  }
+  &::before {
+    display: none;
+  }
+  &.active {
+    right: 0px;
+  }
+}
+
+.sub__contac-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  .icon {
+    width: 48px;
+    height: 48px;
+    background: var(--base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    i {
+      color: var(--white);
+    }
+  }
+  .content {
+    .address {
+      color: rgba(255, 255, 255, 0.5);
+      @include bodyfont;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .textp {
+      color: var(--white);
+      @include bodyfont;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+    }
+  }
+}

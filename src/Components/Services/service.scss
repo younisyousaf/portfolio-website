@@ -1,0 +1,89 @@
+.service__unique__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(38, 37, 37);
+  gap: 14px;
+  transition: all 0.4s;
+  .left__service {
+    width: 1062px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    .serial__adjust {
+      display: flex;
+      gap: 60px;
+      span {
+        font-size: 20px;
+      }
+      .cont {
+        h2 {
+          a {
+            color: var(--white);
+            transition: all 0.4s;
+          }
+        }
+      }
+    }
+    p {
+      font-size: 16px;
+      width: 400px;
+    }
+  }
+  .common__icon {
+    .i {
+      color: var(--white);
+    }
+  }
+  &:first-child {
+    border-top: 1px solid rgb(38, 37, 37);
+  }
+  &:hover {
+    border-color: #c2ec1d9e;
+    .left__service {
+      .serial__adjust {
+        .cont {
+          h2 {
+            a {
+              color: var(--base);
+            }
+          }
+        }
+      }
+    }
+    .common__icon {
+      background: var(--base);
+      .i {
+        color: var(--title);
+      }
+    }
+  }
+  @include breakpoint(max-lg) {
+    .left__service {
+      .serial__adjust {
+        gap: 16px;
+        h5 {
+          font-size: 16px;
+          font-weight: 500;
+        }
+        h2 {
+          font-size: 26px;
+        }
+      }
+      p {
+        width: 300px;
+      }
+    }
+  }
+  @include breakpoint(max-md) {
+    .left__service {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  }
+  @include breakpoint(max-xs) {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

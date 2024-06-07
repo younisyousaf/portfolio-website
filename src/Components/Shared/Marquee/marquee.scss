@@ -1,0 +1,25 @@
+.marquee-wrapper {
+  background: var(--base);
+}
+.text-slider {
+  padding: 13px 0;
+  font-size: 36px;
+  height: 90px;
+  font-weight: 500;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  @include breakpoint(max-xxl) {
+    font-size: 36px;
+  }
+  @include breakpoint(max-md) {
+    height: 70px;
+    padding: 1px 0;
+    .marquee-item {
+      img {
+        width: 220px;
+      }
+    }
+  }
+}
+

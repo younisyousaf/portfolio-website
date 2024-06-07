@@ -1,0 +1,62 @@
+.process__item {
+    overflow: hidden;
+    transition: all 0.4s;
+    border: 1px solid var(--cusborder);
+    border-radius: 10px;
+    padding: 30px 30px;
+    position: relative;
+    ul {
+      li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #999999;
+        font-size: 18px;
+        padding-left: 20px;
+        &::before {
+          position: absolute;
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background: var(--base);
+          content: "";
+          left: 0;
+        }
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+    &::before {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      bottom: 0;
+      right: 0;
+      content: "";
+      background: #121212;
+      border-radius: 100px 20px 0 0;
+      transition: all 0.4s;
+    }
+    &:hover {
+      border-color: var(--hover);
+      &::before {
+        background: var(--base);
+      }
+    }
+    @include breakpoint(max-xxxl) {
+      padding: 20px 18px;
+      ul {
+        li {
+          gap: 10px;
+          font-size: 14px;
+          padding-left: 20px;
+          &:not(:last-child) {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+  

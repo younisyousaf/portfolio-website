@@ -1,0 +1,48 @@
+.blog__bleft__wrapper{
+    padding-right: 26px;
+    @include breakpoint(max-xxxl){
+        padding-right: 0;
+    }
+}
+
+.pagination__box {
+  border-radius: 8px;
+  padding: 30px 30px;
+  .pagi {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    li {
+      a {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background: var(--base);
+        color: var(--title);
+        transition: all 0.4s;
+        font-size: 18px;
+        i {
+          transition: all 0.4s;
+        }
+        &:hover {
+          background: var(--white);
+          color: var(--title);
+          i {
+            color: var(--title);
+          }
+        }
+        @include breakpoint(max-xl) {
+          width: 40px;
+          height: 40px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @include breakpoint(max-xl) {
+    padding: 20px 16px;
+  }
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
+
+@import "./abstracts/mixins.scss";
+@import "./abstracts/variables.scss";
+@import "./abstracts/buttons.scss";
+@import "./base/typography.scss";
+@import "./base/animation";
+
+
+// ------------ Shared style
+@import "../Components/Shared/LightBox/lightBox.scss";
+@import "../Components/Shared/PageHeader/pageHeader.scss";
+@import "../Components/Shared/Title/title.scss";
+@import "../Components/Shared/Drawer/drawer.scss";
+@import "../Components/Shared/Form/form.scss";
+@import "../Components/Shared/Header/header.scss";
+@import "../Components/Shared/Marquee/marquee.scss";
+// ------------ Shared style
+
+
+@import "../Components/Banner/banner.scss";
+
+@import "../Components/About/about.scss";
+
+// ---------- Project
+@import "../Components/Projects/projects.scss";
+@import "../Components/Shared/ProjectCard/projectCard.scss";
+// ---------- Project
+
+@import "../Components/Metting/metting.scss";
+
+// ---------- Service
+@import "../Components/Services/services.scss";
+@import "../Components/Services/service.scss";
+@import "../Pages/serviceDetails.scss";
+// ---------- Service
+
+@import "../Components/WorkeProcess/workeProcess.scss";
+@import "../Components/WorkeProcess/workProcessCard.scss";
+
+@import "../Components/Testimonial/testimonial.scss";
+@import "../Components/Partner/partner.scss";
+
+
+// ---------- Blog
+@import "../Components/Blogs/blogs.scss";
+@import "../Components/Blogs/blogSidebar.scss";
+@import "../Components/Blogs/BlogCard/blogCard.scss";
+@import "../Pages/BlogDetails/blogDetails.scss";
+@import "../Pages/AllBlogs/allBlogs.scss";
+// ---------- Blog
+
+@import "../Components/Pricing/pricing.scss";
+
+@import "../Components/Accordion/accordion.scss";
+
+// ----------- Protfolio
+@import "../Pages/Protfolio/protfolio.scss";
+@import "../Pages/ProtfolioDetails/protfolioDetails.scss";
+// ----------- Protfolio
+
+
+@import "../Pages/Contact/contact.scss";
+
+@import "../Components/Shared/Footer/footer.scss";
+

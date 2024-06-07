@@ -1,0 +1,110 @@
+.service__rightbox {
+  padding: 30px;
+  border: 1px solid var(--cusborder);
+  border-radius: 8px;
+  @include breakpoint(max-xxl) {
+    padding: 20px;
+  }
+  h3 {
+    font-size: 30px;
+    color: var(--white);
+    margin-bottom: 30px;
+  }
+  .link__box {
+    padding: 20px 28px 26px;
+    border-radius: 10px;
+    border: 1px solid var(--cusborder);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    font-size: 24px;
+    transition: all 0.4s;
+    i {
+      color: var(--white);
+      font-size: 22px;
+      transition: all 0.4s;
+    }
+    &:hover {
+      background: var(--base);
+      border-color: var(--base);
+      color: var(--title);
+      i {
+        color: var(--title);
+      }
+    }
+    @include breakpoint(max-xxl) {
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+  }
+  .thumb {
+    position: relative;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    .cmn--btn {
+      width: 190px;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9;
+    }
+    &::before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset: 0;
+      content: "";
+      border-radius: 10px;
+      background-color: rgb(12, 12, 13);
+      opacity: 0.651;
+    }
+  }
+}
+.ser__left__details {
+  .thumb {
+    width: 100%;
+    margin-bottom: 60px;
+    img {
+      width: 100%;
+    }
+  }
+  .text__box {
+    .textt36 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: var(--white);
+      @include breakpoint(max-xl) {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.paythumb {
+  width: 100%;
+  margin-bottom: 60px;
+  img {
+    width: 100%;
+  }
+  .video__80 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    content: "";
+    border-radius: 10px;
+    background-color: rgb(12, 12, 13);
+    opacity: 0.651;
+  }
+}

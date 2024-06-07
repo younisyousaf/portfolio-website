@@ -1,0 +1,316 @@
+//banner
+.banner__section{
+    background: url("/src/assets/img/banner/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+.banner__content{
+    padding: 140px 0 180px;
+    .bn__currently{
+        font-size: 24px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid var(--white);
+        color: var(--white);
+        display: inline-block;
+        padding-bottom: 16px;
+        &:hover{
+            color: var(--base);
+            border-color: var(--base);
+        }
+    }
+    h1{
+        font-size: 116px;
+        margin-bottom: 50px;
+    }
+    .video__area{
+        gap: 24px;
+        align-items: center;
+        display: flex;
+        .proces{
+            font-size: 20px;
+            color: var(--white);
+            width: 67px;
+        }
+    }
+    @include breakpoint(max-xxxl){
+        @include breakpoint(xl){
+            padding-left: 40px;
+        }
+    }
+    @include breakpoint(max-xxl){
+        .bn__currently{
+            font-size: 24px;
+            margin-bottom: 50px;
+            padding-bottom: 16px;
+        }
+        h1{
+            font-size: 86px;
+            margin-bottom: 50px;
+        }
+        .video__area{
+            gap: 24px;
+            .proces{
+                font-size: 20px;
+                width: 67px;
+            }
+        }
+    }
+    @include breakpoint(max-xl){
+        padding: 120px 0 150px;
+    }
+    @include breakpoint(max-lg){
+        padding: 90px 0 100px;
+        .bn__currently{
+            font-size: 24px;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+        }
+        h1{
+            font-size: 68px;
+            margin-bottom: 50px;
+        }
+        .video__area{
+            gap: 24px;
+            .proces{
+                font-size: 20px;
+                width: 67px;
+            }
+        }
+    }
+    @include breakpoint(max-md){
+        padding: 80px 0 85px;
+        .bn__currently{
+            font-size: 20px;
+            margin-bottom: 35px;
+            padding-bottom: 10px;
+        }
+        h1{
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+        .video__area{
+            gap: 24px;
+            .proces{
+                font-size: 20px;
+                width: 67px;
+            }
+        }
+    }
+    @include breakpoint(max-sm){
+        padding: 60px 0 65px;
+        .bn__currently{
+            font-size: 16px;
+            margin-bottom: 35px;
+            padding-bottom: 10px;
+        }
+        h1{
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+        .video__area{
+            gap: 24px;
+            .proces{
+                font-size: 20px;
+                width: 67px;
+            }
+        }
+    }
+    @include breakpoint(max-sm){
+        padding: 60px 0 60px;
+        .bn__currently{
+            margin-bottom: 28px;
+        }
+        h1{
+            font-size: 34px;
+            margin-bottom: 30px;
+        }
+        .video__area{
+            gap: 24px;
+            .video__80{
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+            }
+            .proces{
+                font-size: 16px;
+            }
+        }
+    }
+}
+.banner__thumb{
+    position: absolute;
+    left: calc(50% - -120px);
+    bottom: 0;
+    @include breakpoint(max-xxl){
+        left: calc(50% - -80px);
+        max-width: 500px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.banner__leftinfo{
+    position: absolute;
+    left: -55px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    gap: 220px;
+    @include breakpoint(max-xxxl){
+        left: -40px;
+    }
+    @include breakpoint(max-xxl){
+        left: -60px;
+    }
+    @include breakpoint(max-xl){
+        left: -59px;
+        @media screen and (max-width: 1023px) {
+            display: none;
+        }
+    }
+}
+.left__infomobile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 200px;
+    a{
+        font-size: 20px;
+        color: var(--white);
+        img{
+            transform: rotate(-90deg);
+        }
+    }
+    transform: rotate(90deg);
+    justify-content: center;
+    @include breakpoint(max-xxxl){
+        gap: 16px;
+        a{
+            font-size: 16px;
+            img{
+                width: 16px;
+            }
+        }
+    }
+}
+.right__infoscroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+    transform: rotate(90deg);
+    margin-bottom: 200px;
+    .scroll__bar{
+        transform: rotate(-90deg);
+    }
+    .scroll{
+        font-size: 18px;
+        color: var(--pra);
+        text-transform: uppercase;
+    }
+    @include breakpoint(max-xxxl){
+        gap: 50px;
+        .scroll{
+            font-size: 15px;
+        }
+        .scroll__bar{
+            img{
+                width: 20px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.banner__rightinfo{
+    right: 0px;
+    gap: 150px;
+    top: 55%;
+    display: grid;
+    position: absolute;
+    transform: translateY(-50%);
+    .right__infoscroll{
+        margin-bottom: 0;
+    }
+    .banner__xlsocial{
+        .banner__soci{
+            gap: 14px;
+            li{
+                a{
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 50%;
+                    background-color: rgb(18, 18, 18);
+                    display: flex;  
+                    align-items: center;
+                    justify-content: center;
+                    i{
+                        color: var(--white);
+                        transition: all 0.4s;
+                    }
+                    &:hover{
+                        i{
+                            color: var(--base);
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    @include breakpoint(max-xxl){
+        margin-right: -30px;
+        .banner__xlsocial{
+            .banner__soci{
+                gap: 10px;
+                li{
+                    a{
+                        width: 38px;
+                        height: 38px;
+                        i{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    @include breakpoint(max-lg){
+       display: none;
+    }
+}
+.vid__arrow{
+    animation: cir5 2s linear infinite;
+}
+
+//animation text
+.designers{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white);
+    color: transparent;
+    transition: all 0.5s;
+    position: relative;
+    &::before{
+        content: attr(data-text);
+        position: absolute;
+        color: var(--base);
+        width: 0px;
+        overflow: hidden;
+        animation: pulse-width 3s ease-in infinite;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--base);
+    }
+}
+
+@keyframes pulse-width {
+    50% {
+        width: 100%;
+    }
+}
+
+//animation text
+
+//banner
+

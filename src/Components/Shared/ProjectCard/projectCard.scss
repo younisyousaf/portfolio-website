@@ -1,0 +1,95 @@
+.project__item {
+  overflow: hidden;
+  .thumb {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    img {
+      width: 100%;
+      overflow: hidden;
+      transition: all 0.4s;
+      border-radius: 10px;
+    }
+  }
+  .content {
+    .left__cont {
+      span {
+        font-size: 18px;
+        display: block;
+      }
+      h3 {
+        font-size: 30px;
+      }
+    }
+  }
+  &:hover {
+    .thumb {
+      img {
+        transform: scale(1.025);
+      }
+    }
+    .content {
+      .common__icon {
+        background: var(--base);
+        cursor: pointer;
+        .icon {
+          color: var(--title);
+        }
+      }
+    }
+  }
+  @include breakpoint(max-xxl) {
+    .content {
+      .left__cont {
+        span {
+          font-size: 16px;
+        }
+        h3 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  @include breakpoint(max-xs) {
+    .content {
+      .left__cont {
+        span {
+          font-size: 16px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .common__icon {
+        min-width: 45px;
+        height: 45px;
+        .icon {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.common__icon {
+  border-radius: 6px;
+  background-color: rgb(29, 29, 29);
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+  .icon {
+    color: var(--white);
+    transition: all 0.4s;
+    font-size: 20px;
+  }
+  &:hover {
+    background: var(--base);
+    .icon {
+      color: var(--title);
+    }
+  }
+}

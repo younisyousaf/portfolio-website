@@ -1,0 +1,133 @@
+.blog__bright__bar {
+  border: 1px solid var(--cusborder);
+  padding: 30px 30px;
+  border-radius: 8px;
+  @include breakpoint(max-xl) {
+    padding: 20px 18px;
+  }
+}
+.scope__item {
+  .scope__title {
+    color: var(--white);
+    border-bottom: 1px solid var(--cusborder);
+    padding-bottom: 14px;
+    margin-bottom: 30px;
+  }
+  form {
+    border: 1px solid var(--cusborder);
+    border-radius: 8px;
+    input {
+      width: 100%;
+      background: none;
+      padding: 10px 10px 10px 20px;
+      height: 60px;
+      border: unset;
+    }
+    button {
+      min-width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--base);
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border: unset;
+      i {
+        color: var(--title);
+        font-size: 18px;
+      }
+    }
+  }
+
+  //cate
+  .category {
+    li {
+      transition: all 0.4s;
+      a {
+        transition: all 0.4s;
+        .arrow {
+          transition: all 0.4s;
+          width: 24px;
+          height: 24px;
+          background: var(--base);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          i {
+            font-size: 11px;
+          }
+        }
+      }
+      &:hover {
+        a {
+          color: var(--white);
+          .arrow {
+            background: var(--white);
+            i {
+              color: var(--title);
+            }
+          }
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  //tag
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    li {
+      a {
+        border: 1px solid var(--cusborder);
+        padding: 12px 20px;
+        border-radius: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: var(--pra);
+        display: inline-block;
+        transition: all 0.4s;
+      }
+      &:hover {
+        a {
+          background: var(--base);
+          color: var(--title);
+        }
+      }
+    }
+  }
+  //recent post
+  .recent__post {
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      @include breakpoint(max-xl) {
+        a {
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+      }
+    }
+  }
+  .retitle {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    display: block;
+  }
+}
+.blog__bright__bar {
+  position: sticky;
+  top: 120px;
+}

@@ -1,0 +1,45 @@
+.protfolio__filter {
+  .tablinks {
+    border: 1px solid var(--cusborder);
+    padding: 10px 10px;
+    border-radius: 8px;
+    max-width: 683px;
+    margin: 0 auto 60px;
+    display: flex;
+    align-items: center;
+    .nav-links {
+      button {
+        border: none;
+        background: transparent;
+        text-align: center;
+        display: inline-block;
+        font-size: 18px;
+        color: var(--pra);
+        padding: 16px 24px;
+        border-radius: 5px;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid var(--cusborder);
+      }
+      &.active {
+        button {
+          background: var(--base);
+          color: var(--title);
+        }
+      }
+    }
+    @include breakpoint(max-md) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+      margin: 0 auto 40px;
+      .nav-links {
+        button {
+          display: block;
+          padding: 11px 20px;
+        }
+        border: 1px solid var(--cusborder);
+      }
+    }
+  }
+}

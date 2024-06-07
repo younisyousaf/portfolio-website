@@ -1,0 +1,74 @@
+//>>>>> Component Button Here <<<<<//
+.cmn--btn {
+  padding: 20px 30px 21px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  display: inline-block;
+  text-transform: capitalize;
+  position: relative;
+  background: var(--base);
+  overflow: hidden;
+  @include bodyfont;
+  border-radius: 5px;
+  transition: all 0.5s;
+  color: var(--subtitle);
+  span {
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 100%;
+    background: #aad302;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+  }
+  &:hover {
+    border-color: rgb(0 60 179 / 97%);
+    &::before {
+      bottom: 0;
+    }
+  }
+}
+.hov-white {
+  &:hover {
+    color: var(--white);
+    span {
+      color: var(--white);
+    }
+  }
+}
+//>>>>> Component Button End <<<<<//
+
+//>>>>> common animation <<<<<//
+.video-btn {
+  position: relative;
+  cursor: pointer;
+  &::before {
+    position: absolute;
+    border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
+    content: "";
+    animation: scales 2s linear infinite;
+    border-radius: 50%;
+  }
+}
+@keyframes scales {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+//>>>>> common animation <<<<<//

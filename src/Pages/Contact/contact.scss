@@ -1,0 +1,50 @@
+.contact__box {
+  .replay__box {
+    padding: 60px 60px;
+    h3 {
+      margin-bottom: 30px;
+      display: block;
+    }
+    @include breakpoint(max-xl) {
+      padding: 30px 20px;
+    }
+  }
+}
+.contact__rightside {
+  padding: 60px 30px;
+  @include breakpoint(max-xl) {
+    padding: 30px 20px;
+  }
+  @include breakpoint(max-xs) {
+    padding: 30px 16px;
+  }
+}
+.contact__item {
+  border-radius: 10px;
+  background-color: rgb(29, 29, 29);
+  padding: 30px 30px;
+  .he1 {
+    margin-bottom: 14px;
+    display: block;
+    font-size: 16px;
+    color: var(--pra);
+  }
+  a {
+    color: var(--white);
+    font-size: 20px;
+    display: block;
+  }
+  .address {
+    font-size: 20px;
+    color: var(--white);
+  }
+  @include breakpoint(max-xl) {
+    padding: 20px 16px;
+    a {
+      font-size: 17px;
+    }
+    .address {
+      font-size: 17px;
+    }
+  }
+}

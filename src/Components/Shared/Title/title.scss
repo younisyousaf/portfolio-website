@@ -1,0 +1,43 @@
+// .project__head {
+//   max-width: 1020px;
+//   .common__sub {
+//     width: 408px;
+//   }
+//   @include breakpoint(max-xs) {
+//     .common__sub {
+//       width: 280px;
+//       margin-bottom: 16px;
+//       font-size: 18px;
+//     }
+//     h2 {
+//       font-size: 22px;
+//       line-height: 30px;
+//     }
+//   }
+// }
+
+
+.project__head {
+  max-width: 920px;
+  margin: 0 auto 60px;
+  h2 {
+    font-size: 60px;
+  }
+  @include breakpoint(max-lg) {
+    h2 {
+      font-size: 48px;
+    }
+  }
+  @include breakpoint(max-md) {
+    margin: 0 auto 50px;
+    h2 {
+      font-size: 36px;
+    }
+  }
+  @include breakpoint(max-xs) {
+    h2 {
+      font-size: 29px;
+    }
+    margin: 0 auto 45px;
+  }
+}

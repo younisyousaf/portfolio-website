@@ -1,0 +1,179 @@
+.testimonial__section {
+  overflow: hidden;
+  .project__head {
+    @include breakpoint(max-xs) {
+      .common__sub {
+        margin-bottom: 14px;
+      }
+      h2 {
+        font-size: 23px;
+      }
+    }
+  }
+  .swiper-pagination3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+.testimonial__v1wrap {
+  background: url("/src/assets/img/about/about-bg.png") no-repeat center center;
+  background-size: cover;
+  padding: 130px 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  @include breakpoint(max-xl) {
+    .man1 {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    .man2 {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+    .man3 {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  @include breakpoint(max-lg) {
+    .man1 {
+      opacity: 0.1;
+    }
+    .man2 {
+      opacity: 0.1;
+    }
+    .man3 {
+      opacity: 0.1;
+    }
+    padding: 100px 30px;
+  }
+  @include breakpoint(max-sm) {
+    padding: 80px 16px;
+    .man1 {
+      width: 60px;
+      img {
+        width: 100%;
+      }
+    }
+    .man2 {
+      width: 60px;
+      img {
+        width: 100%;
+      }
+    }
+    .man3 {
+      width: 60px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @include breakpoint(max-xs) {
+    padding: 30px 10px;
+  }
+  .quote {
+    position: absolute;
+    top: 99px;
+    left: 291px;
+    @include breakpoint(max-xl) {
+      left: 240px;
+    }
+    @include breakpoint(max-lg) {
+      display: none;
+    }
+  }
+  .test__shape {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    animation: cir5 2s linear infinite;
+    @include breakpoint(max-lg) {
+      bottom: 15px;
+      right: 15px;
+    }
+    @include breakpoint(max-xs) {
+      display: none;
+    }
+  }
+}
+.testimonial__slidewrap {
+  margin: 0 10px 0 30px;
+  @include breakpoint(max-sm) {
+    margin: 0 0 0 0;
+  }
+}
+.test__slide {
+  position: relative;
+  p {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 40px;
+    font-style: italic;
+    @include breakpoint(max-sm) {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.man1 {
+  position: absolute;
+  top: 50px;
+  height: 93px;
+}
+.man2 {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+}
+.man3 {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+}
+.swiper-pagination3 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: flex-end;
+  margin: 20px -20px;
+  .swiper-pagination-bullet {
+    background: var(--white);
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      width: 20px;
+      height: 20px;
+      content: "";
+      border: 1px solid var(--white);
+      border-radius: 50%;
+    }
+    &.swiper-pagination-bullet-active {
+      background: var(--base);
+      padding: 2px;
+      width: 8px;
+      height: 8px;
+      position: relative;
+      opacity: 1;
+      &::before {
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        width: 20px;
+        height: 20px;
+        content: "";
+        border: 1px solid var(--base);
+        border-radius: 50%;
+      }
+    }
+  }
+}

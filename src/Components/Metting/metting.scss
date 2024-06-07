@@ -1,0 +1,81 @@
+.project__metting {
+  background: url("/src/assets/img/about/about-bg.png") ;
+  background-repeat:no-repeat;
+  background-repeat: center center;
+  background-size: cover;
+  padding: 60px 0px;
+  overflow: hidden;
+}
+.pro__mettingthumb {
+  width: 100%;
+  padding-left: 10px;
+  img {
+    width: 100%;
+  }
+  @include breakpoint(max-lg) {
+    max-width: 400px;
+  }
+}
+.pro__metting__content {
+  padding-right: 60px;
+  .common__sub {
+    margin: 0 0 24px;
+    &::after {
+      display: none;
+    }
+  }
+  .project__head {
+    border-bottom: 1px solid rgb(38, 37, 37);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    transition: all 0.4s;
+    &:hover {
+      border-bottom: 1px solid var(--base);
+    }
+  }
+  .about__contbox__item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: all 0.4s;
+    border-bottom: 1px solid rgb(38, 37, 37);
+    .icon {
+      min-width: 60px;
+      min-height: 60px;
+      border-radius: 50%;
+      background: var(--base);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .i {
+        font-size: 26px;
+        color: var(--title);
+      }
+    }
+    a {
+      color: var(--white);
+      font-size: 20px;
+    }
+    &:hover {
+      border-bottom: 1px solid var(--base);
+    }
+    @include breakpoint(max-md) {
+      gap: 10px;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  @include breakpoint(max-xxl) {
+    .project__head {
+      @include breakpoint(lg) {
+        h2 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+  @include breakpoint(max-lg) {
+    padding-right: 0;
+  }
+}

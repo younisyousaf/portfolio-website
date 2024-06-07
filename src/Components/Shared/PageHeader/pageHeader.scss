@@ -1,0 +1,39 @@
+.breadcrumnd__wrap {
+  h1 {
+    font-size: 60px;
+    color: var(--white);
+    margin-bottom: 40px;
+  }
+  .breakcrumnd__cont {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    li {
+      font-size: 24px;
+      font-family: "Caveat", cursive;
+      a {
+        color: var(--white);
+        font-family: "Caveat", cursive;
+      }
+    }
+    @include breakpoint(max-xs) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px 14px;
+    }
+  }
+  @include breakpoint(max-lg) {
+    h1 {
+      font-size: 36px;
+      color: var(--white);
+      margin-bottom: 34px;
+    }
+  }
+  @include breakpoint(max-sm) {
+    h1 {
+      font-size: 30px;
+      color: var(--white);
+      margin-bottom: 22px;
+    }
+  }
+}
