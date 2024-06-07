@@ -16,7 +16,7 @@ const Preloader = () => {
             }}
           />
         </div>
-        <span className="fz-30 mati fw-600 text-uppercase">Younis</span>
+        <span className="fz-30 mati fw-600 text-uppercase">Younis Yousaf</span>
       </div>
     </div>
   );
