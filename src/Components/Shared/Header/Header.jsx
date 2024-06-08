@@ -37,7 +37,7 @@ const menuList = [
     name: "Services",
   },
   {
-    id: 5,
+    id: 6,
     path: "/contact",
     name: "Contact",
   },
