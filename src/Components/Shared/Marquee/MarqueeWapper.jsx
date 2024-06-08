@@ -7,7 +7,7 @@ const MarqueeWapper = ({ images, direction }) => {
       <div className="marquee-inner ">
         <Marquee direction={direction}>
           {images?.map(({ id, image }) => (
-            <img key={id} src={image} alt="" />
+            <img key={id} src={image} alt="" width={750} height={80} />
           ))}
         </Marquee>
       </div>

@@ -4,7 +4,7 @@
 .text-slider {
   padding: 13px 0;
   font-size: 36px;
-  height: 90px;
+  height: 100px;
   font-weight: 500;
   color: var(--white);
   text-transform: uppercase;
@@ -13,7 +13,7 @@
     font-size: 36px;
   }
   @include breakpoint(max-md) {
-    height: 70px;
+    height: 80px;
     padding: 1px 0;
     .marquee-item {
       img {
@@ -22,4 +22,3 @@
     }
   }
 }
-

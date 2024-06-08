@@ -1,6 +1,6 @@
 import React from "react";
 import { XLg, ChevronRight } from "react-bootstrap-icons";
-import logo from "../../../assets/img/logo/logo.jpg";
+import logo from "../../../assets/img/logo/logo.svg";
 import { socialIcons } from "../../../Utlits/socilIcons";
 import { Link } from "react-router-dom";
 
@@ -20,8 +20,8 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           <img
             src={logo}
             alt="img"
-            height={180}
-            width={180}
+            height={100}
+            width={100}
             style={{ borderRadius: "50%" }}
           />
         </Link>

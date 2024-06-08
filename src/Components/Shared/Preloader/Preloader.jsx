@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../../assets/img/logo/logo.jpg";
+import Logo from "../../../assets/img/logo/logo.svg";
 const Preloader = () => {
   return (
     <div className="preloader__matias">

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Facebook, Linkedin, Instagram, Github } from "react-bootstrap-icons";
 
 import { Link } from "react-router-dom";
-import personalInfoThumb from "../../assets/img/logo/logo.jpg";
+import personalInfoThumb from "../../assets/img/about/personal-info.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

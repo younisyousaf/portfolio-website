@@ -45,9 +45,8 @@
       .serial__adjust {
         .cont {
           h2 {
-            a {
-              color: var(--base);
-            }
+            color: var(--base);
+            cursor: pointer;
           }
         }
       }

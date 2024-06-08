@@ -1,6 +1,7 @@
 import React from "react";
 import Service from "./Service";
 import Title from "../Shared/Title/Title";
+
 const serviceList = [
   {
     id: "01",
@@ -40,6 +41,7 @@ const Services = ({ isHeading }) => {
             sortTitle="Services That i Provide"
           />
         )}
+
         <div className={`service__uniquewrap `}>
           {serviceList.map(({ id, heading, subHeading, para }) => (
             <Service

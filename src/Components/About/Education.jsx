@@ -1,5 +1,5 @@
 import React from "react";
-import personalInfothumb from "../../assets/img/logo/logo.jpg";
+import personalInfothumb from "../../assets/img/about/personal-info.png";
 
 const Education = ({ isTabActive }) => {
   return (

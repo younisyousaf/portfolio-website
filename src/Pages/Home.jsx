@@ -8,7 +8,6 @@ import Metting from "../Components/Metting/Metting";
 import Services from "../Components/Services/Services";
 import WorkeProcess from "../Components/WorkeProcess/WorkeProcess";
 import Testimonial from "../Components/Testimonial/Testimonial";
-import Blogs from "../Components/Blogs/Blogs";
 import MarqueeWapper from "../Components/Shared/Marquee/MarqueeWapper";
 import Awards from "../Components/About/Awards";
 import Preloader from "../Components/Shared/Preloader/Preloader";
@@ -25,15 +24,15 @@ const Home = () => {
   return (
     <>
       {isFetching && <Preloader />}
-      {/* <MarqueeWapper direction="left" images={images} /> */}
+      <MarqueeWapper direction="left" images={images} />
       <About />
-      {/* <MarqueeWapper direction="right" images={images2} /> */}
+      <MarqueeWapper direction="right" images={images2} />
       <Awards />
       <Projects />
       <Metting />
       <Services isHeading={true} />
       <WorkeProcess />
-      {/* <Testimonial /> */}
+      <Testimonial />
       {/* <Blogs /> */}
       <ScrollRestoration />
     </>

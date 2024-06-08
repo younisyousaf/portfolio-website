@@ -27,6 +27,12 @@ const menuList = [
   {
     id: 4,
     path: "/",
+    section: "#testimonial",
+    name: "Testimonials",
+  },
+  {
+    id: 5,
+    path: "/",
     section: "#services",
     name: "Services",
   },

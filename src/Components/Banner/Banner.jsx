@@ -9,9 +9,10 @@ import {
   Github,
 } from "react-bootstrap-icons";
 
-import bannerMan from "../../assets/img/logo/logo.jpg";
+import bannerMan from "../../assets/img/logo/logo.png";
 import scrollDown from "../../assets/img/banner/scroll-down.png";
 import bnArrow from "../../assets/img/banner/bn-arrow.png";
+import dial from "../../assets/img/banner/dial.png";
 import VideoPlay from "../Shared/VideoPlay/VideoPlay";
 
 const socalIcon = [
@@ -60,10 +61,10 @@ const Banner = () => {
                 <span className="d-block">
                   Currently available for Frontend Developer Roles
                 </span>
-                {/* <span className="d-flex gap-4 align-items-center">
+                <span className="d-flex gap-4 align-items-center">
                   worldwide
                   <i className="bi bi-arrow-up-right"></i>
-                </span> */}
+                </span>
               </Link>
               <h1>
                 <span className="hone"> Creative Visual</span>
@@ -93,7 +94,20 @@ const Banner = () => {
           </div>
         </div>
       </div>
-
+      <div className="banner__leftinfo">
+        <div className="left__infomobile">
+          <Link to={""}>
+            <img src={dial} alt="img" />
+          </Link>
+          <Link to={""}>(+92)-349-1300-122</Link>
+        </div>
+        <div className="right__infoscroll">
+          <Link className="scroll">scroll down</Link>
+          <Link className="scroll__bar">
+            <img src={scrollDown} alt="img" />
+          </Link>
+        </div>
+      </div>
       <div className="banner__rightinfo">
         <div className="right__infoscroll">
           <Link to={""} className="scroll">
