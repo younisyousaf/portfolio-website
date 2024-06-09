@@ -17,6 +17,11 @@ const skillsList = [
   { id: 13, skill: "Postman" },
   { id: 14, skill: "Git" },
   { id: 15, skill: "GitHub" },
+  { id: 16, skill: "Vue JS" },
+  { id: 17, skill: "Redux" },
+  { id: 18, skill: "OOP" },
+  { id: 19, skill: "Context API" },
+  { id: 20, skill: "REST APIs" },
 ];
 const Skills = ({ isTabActive }) => {
   return (

@@ -72,7 +72,7 @@ const Testimonial = () => {
           </span>
           <h2 className="fw-500" data-aos="fade-down" data-aos-duration="1000">
             Happy Words From Happy
-            <span className="d-block"> Mentor </span>
+            <span className="d-block"> Mentor's </span>
           </h2>
         </div>
         <div

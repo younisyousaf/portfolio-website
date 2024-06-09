@@ -2,9 +2,16 @@ import React from "react";
 import { XLg, ChevronRight } from "react-bootstrap-icons";
 import logo from "../../../assets/img/logo/logo.svg";
 import { socialIcons } from "../../../Utlits/socilIcons";
+import CV from "../../../assets/docs/Younis's CV.pdf";
 import { Link } from "react-router-dom";
 
 const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = CV;
+    link.download = "Younis's CV.pdf";
+    link.click();
+  };
   return (
     <div className={`subside__barmenu ${isSidebarActive ? "active" : ""}`}>
       <div
@@ -67,16 +74,28 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           </ul>
         </div>
         <Link
-          to={"/contact"}
           className="d-flex justify-content-center fw-500 cmn--btn align-items-center gap-2"
+          to="/contact"
         >
           <span>
             <i>
               <ChevronRight />
             </i>
           </span>
-          <span className="get__text"> Let's Talk </span>
+          <span className="get__text"> Let's talk </span>
         </Link>
+        <div
+          className="d-flex mt-2 justify-content-center fw-500 cmn--btn align-items-center gap-2"
+          role="button"
+          onClick={handleDownloadCV}
+        >
+          <span>
+            <i>
+              <ChevronRight />
+            </i>
+          </span>
+          <span className="get__text"> DownLoad CV </span>
+        </div>
       </div>
     </div>
   );
