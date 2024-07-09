@@ -1,38 +1,36 @@
 import React from "react";
 import { ArrowUpRight } from "react-bootstrap-icons";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-const ProjectCard = ({
-  image,
-  heading,
-  subHeading,
-  index,
-  openLightbox,
-  projectLink,
-}) => {
+const ProjectCard = ({ project, onClick }) => {
+  const projectId = useParams();
   return (
     <div
-      className={`project__item  ${index !== 3 && "cus__mb60"}`}
+      className={`project__item  ${project.index !== 3 && "cus__mb60"}`}
       data-aos="fade-up"
       data-aos-duration="1000"
+      onClick={onClick} // Handle click to navigate to project details
     >
-      <div onClick={() => openLightbox(index)} className="thumb mb-30 imgc">
-        <img src={image} alt="img" />
+      <div className="thumb mb-30 imgc">
+        <img src={project.image} alt="img" />
       </div>
-      <div className="content d-flex  align-items-center justify-content-between gap-2">
+      <div className="content d-flex align-items-center justify-content-between gap-2">
         <div className="d-flex flex-column">
           <Link
-            to={projectLink}
+            to={project.projectLink}
             target="_blank"
             className="base mb-2 mb-xxl-3 d-block text-uppercase"
           >
-            {heading}
+            {project.heading}
           </Link>
-          <Link to={projectLink} target="_blank" className="left__cont">
-            <h3>{subHeading}</h3>
+          <Link to={project.projectLink} target="_blank" className="left__cont">
+            <h3>{project.subHeading}</h3>
           </Link>
         </div>
-        <Link to={projectLink} target="_blank" className="common__icon imgc">
+        <Link
+          to={`/project-details/${project.id}`}
+          className="common__icon imgc"
+        >
           <ArrowUpRight className="icon" />
         </Link>
       </div>

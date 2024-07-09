@@ -150,6 +150,7 @@ const Testimonial = () => {
               height={200}
               style={{
                 borderRadius: "50%",
+                objectFit: "cover",
               }}
             />
           </div>
